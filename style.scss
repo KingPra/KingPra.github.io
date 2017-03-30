@@ -1,0 +1,31 @@
+/* Include Foundation */
+@import 'node_modules/foundation-sites/scss/foundation';
+@include foundation-global-styles;
+@include foundation-grid;
+
+//my colors
+$base: #5B6AA6;
+$secondary: #859BF2;
+$smokeWht: #CED5F2;
+$ltBlue: #859BF2;
+$bgrey: #9A9FB5;
+
+body {
+    background: grey;
+    font-family: 'Cinzel', serif;
+}
+
+header {
+    color: white;
+    vertical-align: middle;
+    text-align: center;
+    height: 100%;
+    font-size: 3em;
+    opacity: 0.8;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 2%;
+}

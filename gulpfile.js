@@ -16,7 +16,7 @@
   // Step 3: create subtasks
   gulp.task('html', function () {
       return gulp.src('index.html')
-        .pipe(gulp.dest('public/'));
+        .pipe(gulp.dest('docs/'));
   });
 
   gulp.task('css', function () {
@@ -24,19 +24,17 @@
       // Copy to public/ 
       return gulp.src('scss/style.scss')
         .pipe(sass()) // requires gulp-sass
-        .pipe(gulp.dest('public/'));
+        .pipe(gulp.dest('docs/'));
   });
 
   gulp.task('js', function () {
       // Copy js file into public/
       return gulp.src('js/app.js')
         .pipe(browser.browserify()) // makes require work
-        .pipe(gulp.dest('public/'));
+        .pipe(gulp.dest('docs/'));
   });
 
   gulp.task('watch', ['default'], function () {
-    // gulp.watch('files-to-watch', 'tasks-to-run')
-    //gulp.watch('index.html',['html']); //watches a specific file 'index.html'
    gulp.watch('*.html',['html']); //watches all html files
    gulp.watch('scss/*.scss', ['css']);
    gulp.watch('js/*/*.js', ['js']);

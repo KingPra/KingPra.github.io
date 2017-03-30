@@ -22,20 +22,20 @@
   gulp.task('css', function () {
       // Convert style.scss into style.css
       // Copy to public/ 
-      return gulp.src('scss/style.scss')
+      return gulp.src('style.scss')
         .pipe(sass()) // requires gulp-sass
         .pipe(gulp.dest('docs/'));
   });
 
   gulp.task('js', function () {
       // Copy js file into public/
-      return gulp.src('js/app.js')
+      return gulp.src('app.js')
         .pipe(browser.browserify()) // makes require work
         .pipe(gulp.dest('docs/'));
   });
 
   gulp.task('watch', ['default'], function () {
-   gulp.watch('*.html',['html']); //watches all html files
-   gulp.watch('scss/*.scss', ['css']);
-   gulp.watch('js/*/*.js', ['js']);
+  gulp.watch('*.html',['html']); //watches all html files
+  gulp.watch('scss/*.scss', ['css']);
+  gulp.watch('js/*/*.js', ['js']);
 });

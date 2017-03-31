@@ -20,11 +20,18 @@ header {
     vertical-align: middle;
     text-align: center;
     height: 100%;
+    margin: 0 0 150px 0;
     font-size: 3em;
     opacity: 0.8;
 
     nav {
-        font-size: 2em;
+        background: black;
+
+        a {
+            font-size: 0.5em;
+            text-decoration: none;
+            color: white;
+        }
     }
 }
 

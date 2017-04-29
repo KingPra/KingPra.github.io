@@ -1272,6 +1272,16 @@ header {
       text-decoration: none;
       color: white; }
 
+.landing {
+  font-size: 1.5em; }
+
+#about, #experience {
+  font-size: 3.5em;
+  text-align: center; }
+
+.main {
+  height: 100vh; }
+
 footer {
   text-align: center;
   margin-top: 20px;

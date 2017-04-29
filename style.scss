@@ -35,6 +35,24 @@ header {
     }
 }
 
+.landing {
+  @include breakpoint(small) {
+    font-size: 1.5em;
+  }
+}
+
+
+#about, #experience {
+  @include breakpoint(small) {
+    font-size: 3.5em;
+    text-align: center;
+  }
+}
+
+.main {
+  height: 100vh;
+}
+
 footer {
     text-align: center;
     margin-top: 20px;

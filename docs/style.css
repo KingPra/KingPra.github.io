@@ -1268,21 +1268,58 @@ header {
   header nav {
     background: black; }
     header nav a {
-      font-size: 0.5em;
+      font-size: 1em;
       text-decoration: none;
       color: white; }
 
 .landing {
   font-size: 1.5em; }
+  .landing img {
+    width: 150px; }
+  @media print, screen and (min-width: 64em) {
+    .landing {
+      font-size: 1em; }
+      .landing img {
+        width: 50px; } }
 
-#about, #experience {
+.secondary-header {
+  width: 100%;
+  float: left;
+  padding-right: 0.625rem;
+  padding-left: 0.625rem;
+  background-color: black;
+  color: white; }
+  @media print, screen and (min-width: 40em) {
+    .secondary-header {
+      padding-right: 0.9375rem;
+      padding-left: 0.9375rem; } }
+  .secondary-header:last-child:not(:first-child) {
+    float: right; }
+  @media print, screen and (min-width: 64em) {
+    .secondary-header {
+      margin-top: 0; } }
+
+#about, #experience, #contact {
   font-size: 3.5em;
   text-align: center; }
+  @media print, screen and (min-width: 64em) {
+    #about, #experience, #contact {
+      font-size: 1.5em;
+      text-align: center; } }
+
+#experience img {
+  margin: 5px;
+  border: 1px black solid; }
 
 .main {
   height: 100vh; }
 
+#contact img {
+  width: 150px; }
+
 footer {
   text-align: center;
   margin-top: 20px;
-  padding-top: 2%; }
+  padding-top: 2%;
+  background-color: black;
+  color: white; }

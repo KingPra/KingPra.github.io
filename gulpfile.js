@@ -13,7 +13,7 @@ gulp.task('html', () => {
 });
 
 gulp.task('css', () => {
-    return gulp.src('scss/style.scss')
+    return gulp.src('style.scss')
       .pipe(sass())
       .pipe(gulp.dest('docs/'));
 });
@@ -33,7 +33,7 @@ gulp.task('images', () => {
 
 gulp.task('watch', ['default'], () => {
 gulp.watch('*.html',['html']);
-gulp.watch('scss/*.scss', ['css']);
+gulp.watch('*.scss', ['css']);
 gulp.watch('js/*/*.js', ['js']);
 gulp.watch('js/*.js', ['js']);
 gulp.watch('images/*', ['images']);

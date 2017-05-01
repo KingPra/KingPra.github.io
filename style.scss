@@ -28,9 +28,11 @@ header {
         background: black;
 
         a {
-            font-size: 0.5em;
+          @include breakpoint(small) {
+            font-size: 1em;
             text-decoration: none;
             color: white;
+          }
         }
     }
 }
@@ -38,14 +40,44 @@ header {
 .landing {
   @include breakpoint(small) {
     font-size: 1.5em;
+    img {
+      width: 150px;
+    }
+    @include breakpoint(large) {
+      font-size: 1em;
+      img {
+        width: 50px;
+      }
+    }
   }
 }
 
+.secondary-header {
+  @include breakpoint(small) {
+    @include grid-column(12);
+    background-color: black;
+    color: white;
+  }
+  @include breakpoint(large) {
+    margin-top: 0;
+  }
+}
 
-#about, #experience {
+#about, #experience, #contact {
   @include breakpoint(small) {
     font-size: 3.5em;
     text-align: center;
+  }
+  @include breakpoint(large) {
+    font-size: 1.5em;
+    text-align: center;
+  }
+}
+
+#experience img {
+  @include breakpoint(small) {
+    margin: 5px;
+    border: 1px black solid;
   }
 }
 
@@ -53,8 +85,18 @@ header {
   height: 100vh;
 }
 
+#contact {
+  @include breakpoint(small) {
+    img {
+      width: 150px;
+    }
+  }
+}
+
 footer {
     text-align: center;
     margin-top: 20px;
     padding-top: 2%;
+    background-color: black;
+    color: white;
 }

@@ -3,35 +3,28 @@
 @include foundation-global-styles;
 @include foundation-grid;
 
-//my colors
-$base: #5B6AA6;
-$secondary: #859BF2;
-$smokeWht: #CED5F2;
-$ltBlue: #859BF2;
-$bgrey: #9A9FB5;
-
 body {
-    background: grey;
+    background: #808080;
     font-family: 'Cinzel', serif;
+    height: 100%;
 }
 
 header {
-    color: white;
+    color: #ffffff;
     vertical-align: middle;
     text-align: center;
-    height: 100%;
     margin: 0 0 150px 0;
     font-size: 3em;
     opacity: 0.8;
 
     nav {
-        background: black;
+        background: #000000;
 
         a {
           @include breakpoint(small) {
             font-size: 1em;
             text-decoration: none;
-            color: white;
+            color: #ffffff;
           }
         }
     }
@@ -55,8 +48,8 @@ header {
 .secondary-header {
   @include breakpoint(small) {
     @include grid-column(12);
-    background-color: black;
-    color: white;
+    background-color: #000000;
+    color: #ffffff;
   }
   @include breakpoint(large) {
     margin-top: 0;
@@ -68,21 +61,35 @@ header {
     font-size: 3.5em;
     text-align: center;
   }
+  @include breakpoint(medium) {
+    font-size: 3em;
+    text-align: center;
+  }
   @include breakpoint(large) {
     font-size: 1.5em;
     text-align: center;
+    overflow: scroll;
   }
+}
+
+#about, #experience {
+  height: 100vh;
+}
+
+.about_paragraph {
+  margin: 0 100px;
 }
 
 #experience img {
   @include breakpoint(small) {
     margin: 5px;
-    border: 1px black solid;
+    border: 1px #000000 solid;
   }
-}
-
-.main {
-  height: 100vh;
+  @include breakpoint(large) {
+    margin: 5px;
+    border: 1px #000000 solid;
+    max-width: 400px;
+  }
 }
 
 #contact {
@@ -97,6 +104,6 @@ footer {
     text-align: center;
     margin-top: 20px;
     padding-top: 2%;
-    background-color: black;
-    color: white;
+    background-color: #000000;
+    color: #ffffff;
 }

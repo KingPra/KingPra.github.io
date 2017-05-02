@@ -1254,23 +1254,23 @@ button {
         margin-bottom: 0; } }
 
 body {
-  background: grey;
-  font-family: 'Cinzel', serif; }
+  background: #808080;
+  font-family: 'Cinzel', serif;
+  height: 100%; }
 
 header {
-  color: white;
+  color: #ffffff;
   vertical-align: middle;
   text-align: center;
-  height: 100%;
   margin: 0 0 150px 0;
   font-size: 3em;
   opacity: 0.8; }
   header nav {
-    background: black; }
+    background: #000000; }
     header nav a {
       font-size: 1em;
       text-decoration: none;
-      color: white; }
+      color: #ffffff; }
 
 .landing {
   font-size: 1.5em; }
@@ -1287,8 +1287,8 @@ header {
   float: left;
   padding-right: 0.625rem;
   padding-left: 0.625rem;
-  background-color: black;
-  color: white; }
+  background-color: #000000;
+  color: #ffffff; }
   @media print, screen and (min-width: 40em) {
     .secondary-header {
       padding-right: 0.9375rem;
@@ -1302,17 +1302,30 @@ header {
 #about, #experience, #contact {
   font-size: 3.5em;
   text-align: center; }
+  @media print, screen and (min-width: 40em) {
+    #about, #experience, #contact {
+      font-size: 3em;
+      text-align: center; } }
   @media print, screen and (min-width: 64em) {
     #about, #experience, #contact {
       font-size: 1.5em;
-      text-align: center; } }
+      text-align: center;
+      overflow: scroll; } }
+
+#about, #experience {
+  height: 100vh; }
+
+.about_paragraph {
+  margin: 0 100px; }
 
 #experience img {
   margin: 5px;
-  border: 1px black solid; }
-
-.main {
-  height: 100vh; }
+  border: 1px #000000 solid; }
+  @media print, screen and (min-width: 64em) {
+    #experience img {
+      margin: 5px;
+      border: 1px #000000 solid;
+      max-width: 400px; } }
 
 #contact img {
   width: 150px; }
@@ -1321,5 +1334,5 @@ footer {
   text-align: center;
   margin-top: 20px;
   padding-top: 2%;
-  background-color: black;
-  color: white; }
+  background-color: #000000;
+  color: #ffffff; }

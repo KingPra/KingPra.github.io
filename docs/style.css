@@ -1258,28 +1258,35 @@ body {
   font-family: 'Cinzel', serif;
   height: 100%; }
 
-header {
+.header {
   color: #ffffff;
   vertical-align: middle;
   text-align: center;
   margin: 0 0 150px 0;
   font-size: 3em;
   opacity: 0.8; }
-  header nav {
-    background: #000000;
-    position: fixed;
-    width: 100vw;
-    top: 0;
-    z-index: 100; }
-    header nav p {
-      text-align: left;
-      margin: 0;
-      color: #808080;
-      font-size: .5em; }
-    header nav a {
-      font-size: 1em;
-      text-decoration: none;
-      color: #ffffff; }
+  .header nav a {
+    font-size: 1em;
+    text-decoration: none;
+    color: #ffffff; }
+
+.header__nav {
+  background: #000000;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  z-index: 100; }
+  @media print, screen and (min-width: 64em) {
+    .header__nav {
+      font-size: .5em; } }
+
+.header__p {
+  text-align: left;
+  margin: 0;
+  color: #808080; }
+  @media print, screen and (min-width: 64em) {
+    .header__p {
+      font-size: 1.5em; } }
 
 .landing {
   font-size: 1.5em; }
@@ -1292,23 +1299,23 @@ header {
       .landing img {
         width: 50px; } }
 
-.secondary-header {
+.secondary_header {
   width: 100%;
   float: left;
   padding-right: 0.625rem;
   padding-left: 0.625rem;
   background-color: #000000;
   color: #ffffff;
-  margin-top: 100px; }
+  margin-top: 150px; }
   @media print, screen and (min-width: 40em) {
-    .secondary-header {
+    .secondary_header {
       padding-right: 0.9375rem;
       padding-left: 0.9375rem; } }
-  .secondary-header:last-child:not(:first-child) {
+  .secondary_header:last-child:not(:first-child) {
     float: right; }
   @media print, screen and (min-width: 64em) {
-    .secondary-header {
-      margin-top: 100px; } }
+    .secondary_header {
+      margin-top: 80px; } }
 
 #about, #experience, #contact {
   font-size: 3.5em;
@@ -1325,8 +1332,9 @@ header {
       text-align: center;
       overflow: scroll; } }
 
-#main {
-  height: 100vh; }
+.main {
+  height: 100vh;
+  margin-top: 200px; }
 
 .about_paragraph {
   margin: 100px 100px 0 100px; }

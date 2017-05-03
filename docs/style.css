@@ -1266,7 +1266,16 @@ header {
   font-size: 3em;
   opacity: 0.8; }
   header nav {
-    background: #000000; }
+    background: #000000;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    z-index: 100; }
+    header nav p {
+      text-align: left;
+      margin: 0;
+      color: #808080;
+      font-size: .5em; }
     header nav a {
       font-size: 1em;
       text-decoration: none;
@@ -1278,7 +1287,8 @@ header {
     width: 150px; }
   @media print, screen and (min-width: 64em) {
     .landing {
-      font-size: 1em; }
+      font-size: 1em;
+      margin: 100px; }
       .landing img {
         width: 50px; } }
 
@@ -1297,7 +1307,7 @@ header {
     float: right; }
   @media print, screen and (min-width: 64em) {
     .secondary-header {
-      margin-top: 0; } }
+      margin-top: 100px; } }
 
 #about, #experience, #contact {
   font-size: 3.5em;

@@ -1295,7 +1295,13 @@ body {
   @media print, screen and (min-width: 64em) {
     .landing {
       font-size: 1em;
-      margin: 100px; }
+      padding: 100px;
+      text-shadow: 1px 1px #000000;
+      background-size: cover;
+      background-image: url("../docs/images/kpHeadSide.jpg");
+      background-color: #8fbc8f;
+      background-blend-mode: overlay;
+      opacity: .9; }
       .landing img {
         width: 50px; } }
 
@@ -1315,7 +1321,7 @@ body {
     float: right; }
   @media print, screen and (min-width: 64em) {
     .secondary_header {
-      margin-top: 80px; } }
+      margin-top: 90px; } }
 
 #about, #experience, #contact {
   font-size: 3.5em;
@@ -1336,20 +1342,25 @@ body {
       color: #767776; } }
 
 .main {
-  height: 100vh;
-  margin-top: 200px; }
+  height: 100vh; }
 
 .about_paragraph {
   margin: 100px 100px 0 100px; }
 
 #experience img {
   margin: 5px;
-  border: 1px #000000 solid; }
+  border: 1px #000000 solid;
+  border-radius: 3px; }
   @media print, screen and (min-width: 64em) {
     #experience img {
       margin: 5px;
       border: 1px #000000 solid;
+      border-radius: 3px;
       max-width: 400px; } }
+
+.experience__link {
+  text-decoration: none;
+  color: #767776; }
 
 #contact img {
   width: 150px; }

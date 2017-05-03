@@ -56,7 +56,13 @@ body {
     }
     @include breakpoint(large) {
       font-size: 1em;
-      margin: 100px;
+      padding: 100px;
+      text-shadow: 1px 1px #000000;
+      background-size: cover;
+      background-image: url("../docs/images/kpHeadSide.jpg");
+      background-color: #8fbc8f;
+      background-blend-mode: overlay;
+      opacity: .9;
       img {
         width: 50px;
       }
@@ -72,7 +78,7 @@ body {
     margin-top: 150px;
   }
   @include breakpoint(large) {
-    margin-top: 80px;
+    margin-top: 90px;
   }
 }
 
@@ -99,7 +105,6 @@ body {
 
 .main {
   height: 100vh;
-  margin-top: 200px;
 }
 
 .about_paragraph {
@@ -110,12 +115,19 @@ body {
   @include breakpoint(small) {
     margin: 5px;
     border: 1px #000000 solid;
+    border-radius: 3px;
   }
   @include breakpoint(large) {
     margin: 5px;
     border: 1px #000000 solid;
+    border-radius: 3px;
     max-width: 400px;
   }
+}
+
+.experience__link {
+  text-decoration: none;
+  color: #767776;
 }
 
 #contact {

@@ -4,7 +4,7 @@
 @include foundation-grid;
 
 body {
-  background: #808080;
+  background: #1f1f1f;
   font-family: 'Cinzel', serif;
   height: 100%;
 }
@@ -68,7 +68,7 @@ body {
   @include breakpoint(small) {
     @include grid-column(12);
     background-color: #000000;
-    color: #ffffff;
+    color: #767776;
     margin-top: 150px;
   }
   @include breakpoint(large) {
@@ -81,16 +81,19 @@ body {
     font-size: 3.5em;
     text-align: center;
     overflow: scroll;
+    color: #767776;
   }
   @include breakpoint(medium) {
     font-size: 3em;
     text-align: center;
     overflow: scroll;
+    color: #767776;
   }
   @include breakpoint(large) {
     font-size: 1.5em;
     text-align: center;
     overflow: scroll;
+    color: #767776;
   }
 }
 

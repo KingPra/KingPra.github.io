@@ -1254,7 +1254,7 @@ button {
         margin-bottom: 0; } }
 
 body {
-  background: #808080;
+  background: #1f1f1f;
   font-family: 'Cinzel', serif;
   height: 100%; }
 
@@ -1305,7 +1305,7 @@ body {
   padding-right: 0.625rem;
   padding-left: 0.625rem;
   background-color: #000000;
-  color: #ffffff;
+  color: #767776;
   margin-top: 150px; }
   @media print, screen and (min-width: 40em) {
     .secondary_header {
@@ -1320,17 +1320,20 @@ body {
 #about, #experience, #contact {
   font-size: 3.5em;
   text-align: center;
-  overflow: scroll; }
+  overflow: scroll;
+  color: #767776; }
   @media print, screen and (min-width: 40em) {
     #about, #experience, #contact {
       font-size: 3em;
       text-align: center;
-      overflow: scroll; } }
+      overflow: scroll;
+      color: #767776; } }
   @media print, screen and (min-width: 64em) {
     #about, #experience, #contact {
       font-size: 1.5em;
       text-align: center;
-      overflow: scroll; } }
+      overflow: scroll;
+      color: #767776; } }
 
 .main {
   height: 100vh;

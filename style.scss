@@ -62,6 +62,7 @@ header {
     @include grid-column(12);
     background-color: #000000;
     color: #ffffff;
+    margin-top: 100px;
   }
   @include breakpoint(large) {
     margin-top: 100px;
@@ -72,10 +73,12 @@ header {
   @include breakpoint(small) {
     font-size: 3.5em;
     text-align: center;
+    overflow: scroll;
   }
   @include breakpoint(medium) {
     font-size: 3em;
     text-align: center;
+    overflow: scroll;
   }
   @include breakpoint(large) {
     font-size: 1.5em;
@@ -84,12 +87,12 @@ header {
   }
 }
 
-#about, #experience {
+#main {
   height: 100vh;
 }
 
 .about_paragraph {
-  margin: 0 100px;
+  margin: 100px 100px 0 100px;
 }
 
 #experience img {

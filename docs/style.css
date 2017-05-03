@@ -1278,7 +1278,8 @@ body {
   z-index: 100; }
   @media print, screen and (min-width: 64em) {
     .header__nav {
-      font-size: .5em; } }
+      font-size: .5em;
+      opacity: .8; } }
 
 .header__p {
   text-align: left;

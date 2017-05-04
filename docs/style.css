@@ -1254,8 +1254,11 @@ button {
 
 body {
   background: #1f1f1f;
-  font-family: serif;
-  height: 100%; }
+  height: 100%;
+  font-family: serif; }
+  @media print, screen and (min-width: 40em) {
+    body {
+      font-family: 'Cinzel', serif; } }
 
 .header {
   color: #ffffff;
@@ -1401,7 +1404,8 @@ body {
 
 footer {
   text-align: center;
+  text-decoration: none;
   margin-top: 20px;
   padding-top: 2%;
   background-color: #000000;
-  color: #ffffff; }
+  color: #767776; }

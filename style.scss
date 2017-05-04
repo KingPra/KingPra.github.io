@@ -4,8 +4,13 @@
 
 body {
   background: #1f1f1f;
-  font-family: serif;
   height: 100%;
+  @include breakpoint(small) {
+    font-family: serif;
+  }
+  @include breakpoint(medium) {
+    font-family: 'Cinzel', serif;
+  }
 }
 
 .header {
@@ -168,8 +173,9 @@ body {
 
 footer {
     text-align: center;
+    text-decoration: none;
     margin-top: 20px;
     padding-top: 2%;
     background-color: #000000;
-    color: #ffffff;
+    color: #767776;
 }

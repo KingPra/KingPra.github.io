@@ -1298,6 +1298,7 @@ body {
   background-position: 50%;
   opacity: .9;
   overflow: scroll;
+  z-index: 0;
   font-size: 1.5em; }
   .landing img {
     width: 150px; }
@@ -1333,6 +1334,7 @@ body {
   text-align: center;
   overflow: scroll;
   color: #767776;
+  z-index: 2;
   font-size: 3.5em; }
   @media print, screen and (min-width: 40em) {
     #about, #experience, #contact {

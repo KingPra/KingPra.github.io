@@ -58,6 +58,7 @@ body {
   background-position: 50%;
   opacity: .9;
   overflow: scroll;
+  z-index: 0;
   @include breakpoint(small) {
     font-size: 1.5em;
     img {
@@ -93,6 +94,7 @@ body {
   text-align: center;
   overflow: scroll;
   color: #767776;
+  z-index: 2;
   @include breakpoint(small) {
     font-size: 3.5em;
   }

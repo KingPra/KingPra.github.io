@@ -72,6 +72,10 @@ body {
   }
 }
 
+.landing__h1 {
+  padding: 1em 0 0 0;
+}
+
 .secondary_header {
   @include breakpoint(small) {
     @include grid-column(12);

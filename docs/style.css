@@ -1290,19 +1290,20 @@ body {
       font-size: 1.5em; } }
 
 .landing {
+  text-shadow: 1px 1px #000000;
+  background-size: cover;
+  background-image: url("../docs/images/kpHeadSide.jpg");
+  background-color: #8fbc8f;
+  background-blend-mode: overlay;
+  background-position: 50%;
+  opacity: .9;
   font-size: 1.5em; }
   .landing img {
     width: 150px; }
   @media print, screen and (min-width: 64em) {
     .landing {
       font-size: 1em;
-      padding: 100px;
-      text-shadow: 1px 1px #000000;
-      background-size: cover;
-      background-image: url("../docs/images/kpHeadSide.jpg");
-      background-color: #8fbc8f;
-      background-blend-mode: overlay;
-      opacity: .9; }
+      padding: 100px; }
       .landing img {
         width: 50px; } }
 

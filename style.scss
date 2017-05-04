@@ -50,6 +50,13 @@ body {
 }
 
 .landing {
+  text-shadow: 1px 1px #000000;
+  background-size: cover;
+  background-image: url("../docs/images/kpHeadSide.jpg");
+  background-color: #8fbc8f;
+  background-blend-mode: overlay;
+  background-position: 50%;
+  opacity: .9;
   @include breakpoint(small) {
     font-size: 1.5em;
     img {
@@ -58,12 +65,6 @@ body {
     @include breakpoint(large) {
       font-size: 1em;
       padding: 100px;
-      text-shadow: 1px 1px #000000;
-      background-size: cover;
-      background-image: url("../docs/images/kpHeadSide.jpg");
-      background-color: #8fbc8f;
-      background-blend-mode: overlay;
-      opacity: .9;
       img {
         width: 50px;
       }

@@ -1,4 +1,3 @@
-/* Include Foundation */
 /**
  * Foundation for Sites by ZURB
  * Version 6.3.0
@@ -1359,11 +1358,43 @@ body {
   border-radius: 3px; }
   @media print, screen and (min-width: 64em) {
     #experience img {
-      max-width: 400px; } }
+      max-width: 500px; } }
+
+@media print, screen and (min-width: 64em) {
+  .experience__container {
+    width: 50%;
+    float: left;
+    padding-right: 0.625rem;
+    padding-left: 0.625rem;
+    display: inline-block; } }
+  @media print, screen and (min-width: 64em) and (min-width: 40em) {
+    .experience__container {
+      padding-right: 0.9375rem;
+      padding-left: 0.9375rem; } }
+
+@media print, screen and (min-width: 64em) {
+    .experience__container:last-child:not(:first-child) {
+      float: right; } }
 
 .experience__link {
   text-decoration: none;
   color: #767776; }
+
+.experience__name {
+  color: #ffffff;
+  opacity: .5;
+  margin: 0; }
+
+.experience__image {
+  opacity: .5; }
+
+.experience__container:hover .experience__name {
+  opacity: 1;
+  transition: .5s ease; }
+
+.experience__container:hover .experience__image {
+  opacity: 1;
+  transition: .5s ease; }
 
 #contact img {
   width: 150px; }

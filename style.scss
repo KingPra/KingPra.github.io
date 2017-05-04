@@ -57,6 +57,7 @@ body {
   background-blend-mode: overlay;
   background-position: 50%;
   opacity: .9;
+  overflow: scroll;
   @include breakpoint(small) {
     font-size: 1.5em;
     img {
@@ -89,23 +90,17 @@ body {
 }
 
 #about, #experience, #contact {
+  text-align: center;
+  overflow: scroll;
+  color: #767776;
   @include breakpoint(small) {
     font-size: 3.5em;
-    text-align: center;
-    overflow: scroll;
-    color: #767776;
   }
   @include breakpoint(medium) {
     font-size: 3em;
-    text-align: center;
-    overflow: scroll;
-    color: #767776;
   }
   @include breakpoint(large) {
     font-size: 1.5em;
-    text-align: center;
-    overflow: scroll;
-    color: #767776;
   }
   @include breakpoint(xxlarge) {
     padding: 150px;
@@ -122,15 +117,10 @@ body {
 }
 
 #experience img {
-  @include breakpoint(small) {
     margin: 5px;
     border: 1px #000000 solid;
     border-radius: 3px;
-  }
   @include breakpoint(large) {
-    margin: 5px;
-    border: 1px #000000 solid;
-    border-radius: 3px;
     max-width: 400px;
   }
 }

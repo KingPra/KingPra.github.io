@@ -1297,6 +1297,7 @@ body {
   background-blend-mode: overlay;
   background-position: 50%;
   opacity: .9;
+  overflow: scroll;
   font-size: 1.5em; }
   .landing img {
     width: 150px; }
@@ -1329,22 +1330,16 @@ body {
       margin-top: 90px; } }
 
 #about, #experience, #contact {
-  font-size: 3.5em;
   text-align: center;
   overflow: scroll;
-  color: #767776; }
+  color: #767776;
+  font-size: 3.5em; }
   @media print, screen and (min-width: 40em) {
     #about, #experience, #contact {
-      font-size: 3em;
-      text-align: center;
-      overflow: scroll;
-      color: #767776; } }
+      font-size: 3em; } }
   @media print, screen and (min-width: 64em) {
     #about, #experience, #contact {
-      font-size: 1.5em;
-      text-align: center;
-      overflow: scroll;
-      color: #767776; } }
+      font-size: 1.5em; } }
   @media screen and (min-width: 90em) {
     #about, #experience, #contact {
       padding: 150px;
@@ -1362,9 +1357,6 @@ body {
   border-radius: 3px; }
   @media print, screen and (min-width: 64em) {
     #experience img {
-      margin: 5px;
-      border: 1px #000000 solid;
-      border-radius: 3px;
       max-width: 400px; } }
 
 .experience__link {

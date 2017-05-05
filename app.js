@@ -4,7 +4,7 @@ window.onscroll = () => {
 };
 
 function scrollFunction () {
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+  if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
     document.getElementById('myBtn').style.display = 'block';
   } else {
     document.getElementById('myBtn').style.display = 'none';

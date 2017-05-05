@@ -19,7 +19,7 @@ gulp.task('css', () => {
 });
 
 gulp.task('js', () => {
-    return gulp.src('js/app.js')
+    return gulp.src('app.js')
       .pipe(browser.browserify())
       .pipe(strip())
       .pipe(gulp.dest('docs/'));
@@ -34,7 +34,6 @@ gulp.task('images', () => {
 gulp.task('watch', ['default'], () => {
 gulp.watch('*.html',['html']);
 gulp.watch('*.scss', ['css']);
-gulp.watch('js/*/*.js', ['js']);
-gulp.watch('js/*.js', ['js']);
+gulp.watch('*.js', ['js']);
 gulp.watch('images/*', ['images']);
 });

@@ -1,27 +1,17 @@
-const app = angular.module('MyApp',['ui.router', 'ngMaterial', 'ngAnimate']);
 
-app.config(($stateProvider) => {
-  $stateProvider.state({
-    name: 'home',
-    url: '',
-    component: 'home',
-  });
+window.onscroll = () => {
+  scrollFunction();
+};
 
-  $stateProvider.state({
-    name: 'projects',
-    url:'/projects',
-    component:'projects',
-  });
-});
+function scrollFunction () {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById('myBtn').style.display = 'block';
+  } else {
+    document.getElementById('myBtn').style.display = 'none';
+  }
+};
 
-app.controller('HomeCtrl', ($scope) => {
-  console.log('hello from the other side');
-});
-
-app.component('home', {
-  templateUrl: 'templates/home.html',
-});
-
-app.component('projects', {
-  templateUrl: 'templates/projects.html',
-});
+window.toTheTop = () => {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+};

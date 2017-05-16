@@ -13,6 +13,7 @@
     }
     .container {
         padding: 0;
+        text-shadow: 2px 2px 10px #000;
         .navbar-brand {
             color: $theme-primary;
             @include script-font;

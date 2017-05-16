@@ -2,8 +2,8 @@
 header.masthead {
     text-align: center;
     color: white;
-    // background-image: url('../img/header-bg.jpg');
-    background-image: url('../images/kpHeadSide.jpg');
+    background-image: url('../img/header_bg2.jpg');
+    height: 100vh;
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
@@ -33,6 +33,7 @@ header.masthead {
         .intro-text {
             padding-top: 300px;
             padding-bottom: 200px;
+            text-shadow: -1px 2px 20px #000;
             .intro-lead-in {
                 font-size: 40px;
                 font-style: italic;

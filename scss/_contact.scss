@@ -1,52 +1,84 @@
 // Styling for the contact section
 section#contact {
     background-color: $gray-darker;
-    background-image: url('../img/map-image.png');
+    background-image: url('../img/bg5.jpg');
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    text-shadow: 2px 2px 10px #000;
+    height: 100vh;
     .section-heading {
         color: white;
     }
-    .form-group {
-        margin-bottom: 25px;
-        input,
-        textarea {
-            padding: 20px;
+
+    ul.social-buttons {
+        margin-bottom: auto;
+        text-align: center;
+        li {
+          border: 1px outset #fff;
+          border-radius: 50%;
+            a {
+                font-size: 20px;
+                line-height: 40px;
+                display: block;
+                width: 40px;
+                height: 40px;
+                -webkit-transition: all .3s;
+                -moz-transition: all .3s;
+                transition: all .3s;
+                color: white;
+                border-radius: 100%;
+                outline: none;
+                background-color: $gray-darker;
+                &:hover,
+                &:focus,
+                &:active {
+                    background-color: $theme-primary;
+                }
+            }
         }
-        input.form-control {
-            height: auto;
-        }
-        textarea.form-control {
-            height: 236px;
-        }
     }
-    .form-control:focus {
-        border-color: $theme-primary;
-        box-shadow: none;
-    }
-    ::-webkit-input-placeholder {
-        font-weight: 700;
-        color: $gray-lighter;
-        @include heading-font;
-    }
-    :-moz-placeholder {
-        font-weight: 700;
-        color: $gray-lighter;
-        /* Firefox 18- */
-        @include heading-font;
-    }
-    ::-moz-placeholder {
-        font-weight: 700;
-        color: $gray-lighter;
-        /* Firefox 19+ */
-        @include heading-font;
-    }
-    :-ms-input-placeholder {
-        font-weight: 700;
-        color: $gray-lighter;
-        @include heading-font;
-    }
-    .text-danger {
-        color: $theme-danger;
-    }
+
+    // .form-group {
+    //     margin-bottom: 25px;
+    //     input,
+    //     textarea {
+    //         padding: 20px;
+    //     }
+    //     input.form-control {
+    //         height: auto;
+    //     }
+    //     textarea.form-control {
+    //         height: 236px;
+    //     }
+    // }
+    // .form-control:focus {
+    //     border-color: $theme-primary;
+    //     box-shadow: none;
+    // }
+    // ::-webkit-input-placeholder {
+    //     font-weight: 700;
+    //     color: $gray-lighter;
+    //     @include heading-font;
+    // }
+    // :-moz-placeholder {
+    //     font-weight: 700;
+    //     color: $gray-lighter;
+    //     /* Firefox 18- */
+    //     @include heading-font;
+    // }
+    // ::-moz-placeholder {
+    //     font-weight: 700;
+    //     color: $gray-lighter;
+    //     /* Firefox 19+ */
+    //     @include heading-font;
+    // }
+    // :-ms-input-placeholder {
+    //     font-weight: 700;
+    //     color: $gray-lighter;
+    //     @include heading-font;
+    // }
+    // .text-danger {
+    //     color: $theme-danger;
+    // }
 }

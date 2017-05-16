@@ -73,7 +73,8 @@ body {
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     text-transform: uppercase; }
   #mainNav .container {
-    padding: 0; }
+    padding: 0;
+    text-shadow: 2px 2px 10px #000; }
     #mainNav .container .navbar-brand {
       color: #fed136;
       font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive; }
@@ -115,7 +116,8 @@ body {
 header.masthead {
   text-align: center;
   color: white;
-  background-image: url("../images/kpHeadSide.jpg");
+  background-image: url("../img/header_bg2.jpg");
+  height: 100vh;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -143,7 +145,8 @@ header.masthead {
 @media (min-width: 768px) {
   header.masthead .intro-text {
     padding-top: 300px;
-    padding-bottom: 200px; }
+    padding-bottom: 200px;
+    text-shadow: -1px 2px 20px #000; }
     header.masthead .intro-text .intro-lead-in {
       font-size: 40px;
       font-style: italic;
@@ -436,47 +439,35 @@ header.masthead {
 
 section#contact {
   background-color: #222222;
-  background-image: url("../img/map-image.png");
+  background-image: url("../img/bg5.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: center; }
+  background-position: center;
+  text-shadow: 2px 2px 10px #000;
+  height: 100vh; }
   section#contact .section-heading {
     color: white; }
-  section#contact .form-group {
-    margin-bottom: 25px; }
-    section#contact .form-group input,
-    section#contact .form-group textarea {
-      padding: 20px; }
-    section#contact .form-group input.form-control {
-      height: auto; }
-    section#contact .form-group textarea.form-control {
-      height: 236px; }
-  section#contact .form-control:focus {
-    border-color: #fed136;
-    box-shadow: none; }
-  section#contact ::-webkit-input-placeholder {
-    font-weight: 700;
-    color: #eeeeee;
-    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    text-transform: uppercase; }
-  section#contact :-moz-placeholder {
-    font-weight: 700;
-    color: #eeeeee;
-    /* Firefox 18- */
-    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    text-transform: uppercase; }
-  section#contact ::-moz-placeholder {
-    font-weight: 700;
-    color: #eeeeee;
-    /* Firefox 19+ */
-    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    text-transform: uppercase; }
-  section#contact :-ms-input-placeholder {
-    font-weight: 700;
-    color: #eeeeee;
-    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    text-transform: uppercase; }
-  section#contact .text-danger {
-    color: #e74c3c; }
+  section#contact ul.social-buttons {
+    margin-bottom: auto;
+    text-align: center; }
+    section#contact ul.social-buttons li {
+      border: 1px outset #fff;
+      border-radius: 50%; }
+      section#contact ul.social-buttons li a {
+        font-size: 20px;
+        line-height: 40px;
+        display: block;
+        width: 40px;
+        height: 40px;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        transition: all .3s;
+        color: white;
+        border-radius: 100%;
+        outline: none;
+        background-color: #222222; }
+        section#contact ul.social-buttons li a:hover, section#contact ul.social-buttons li a:focus, section#contact ul.social-buttons li a:active {
+          background-color: #fed136; }
 
 footer {
   padding: 25px 0;
@@ -494,24 +485,6 @@ footer {
     text-transform: none;
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     text-transform: uppercase; }
-
-ul.social-buttons {
-  margin-bottom: 0; }
-  ul.social-buttons li a {
-    font-size: 20px;
-    line-height: 40px;
-    display: block;
-    width: 40px;
-    height: 40px;
-    -webkit-transition: all .3s;
-    -moz-transition: all .3s;
-    transition: all .3s;
-    color: white;
-    border-radius: 100%;
-    outline: none;
-    background-color: #222222; }
-    ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li a:active {
-      background-color: #fed136; }
 
 .text-primary {
   color: #fed136 !important; }

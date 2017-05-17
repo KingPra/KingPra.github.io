@@ -452,7 +452,8 @@ section#contact {
     text-align: center; }
     section#contact ul.social-buttons li {
       border: 1px outset #fff;
-      border-radius: 50%; }
+      border-radius: 50%;
+      margin-bottom: 5px; }
       section#contact ul.social-buttons li a {
         font-size: 40px;
         line-height: 80px;

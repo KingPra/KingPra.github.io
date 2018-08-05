@@ -26,7 +26,7 @@ gulp.task('html', () => {
   .pipe(minify({
     minify: true,
     minifyHTML: {
-      collapseWhitespace: true
+      collapseWhitespace: true,
     }
   }))
   .pipe(gulp.dest('docs/'))
